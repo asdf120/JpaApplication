@@ -37,4 +37,4 @@ replay_pid*
 .gradle 
 .gradle/ 
 build/
-
+*.lock
