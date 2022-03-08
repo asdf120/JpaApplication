@@ -36,7 +36,5 @@ replay_pid*
 # Gradle files 
 .gradle
 .gradle/
-.gradle/7.4/executionHistory/executionHistory.lock
-.gradle/buildOutputCleanup/buildOutputCleanup.lock
 build/
 *.lock
