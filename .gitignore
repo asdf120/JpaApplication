@@ -34,7 +34,7 @@ hs_err_pid*
 replay_pid*
 
 # Gradle files 
-.gradle 
-.gradle/ 
+.gradle
+.gradle/
 build/
 *.lock
