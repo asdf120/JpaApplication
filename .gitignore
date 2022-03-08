@@ -18,6 +18,7 @@ out
 gen
 build
 rebel.xml
+.idea/compiler.xml
 
 # Package Files #
 *.jar
