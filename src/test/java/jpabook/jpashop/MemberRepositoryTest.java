@@ -20,18 +20,18 @@ public class MemberRepositoryTest {
     @Rollback(false)    // 롤백 안하고 커밋함
     public void testMember() throws Exception{
         //given
-        Member member = new Member();
-        member.setUserName("memberA");
-
-        //when
-        Long saveId = memberRepository.save(member);
-        Member findMember = memberRepository.find(saveId);
-
-        //then
-        Assertions.assertThat(findMember.getId()).isEqualTo(member.getId());
-        Assertions.assertThat(findMember.getUserName()).isEqualTo(member.getUserName());
-        Assertions.assertThat(findMember).isEqualTo(member);
-        System.out.println("findMember == member : " + (findMember == member));
+//        Member member = new Member();
+//        member.setUserName("memberA");
+//
+//        //when
+//        Long saveId = memberRepository.save(member);
+//        Member findMember = memberRepository.find(saveId);
+//
+//        //then
+//        Assertions.assertThat(findMember.getId()).isEqualTo(member.getId());
+//        Assertions.assertThat(findMember.getUserName()).isEqualTo(member.getUserName());
+//        Assertions.assertThat(findMember).isEqualTo(member);
+//        System.out.println("findMember == member : " + (findMember == member));
 
     }
 }
