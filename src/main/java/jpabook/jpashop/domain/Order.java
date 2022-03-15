@@ -1,6 +1,8 @@
 package jpabook.jpashop.domain;
 
+import lombok.AccessLevel;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
@@ -11,6 +13,7 @@ import java.util.List;
 @Entity
 @Table(name = "orders")
 @Getter@Setter
+@NoArgsConstructor(access = AccessLevel.PROTECTED) //새로 객체를 생성못하게 막아서 다른데서 주문상품 필드값을 설정 못하게함
 public class Order {
 
     @Id @GeneratedValue

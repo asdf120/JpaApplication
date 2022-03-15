@@ -1,13 +1,16 @@
 package jpabook.jpashop.domain;
 
 import jpabook.jpashop.domain.item.Item;
+import lombok.AccessLevel;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
 
 @Entity
 @Getter @Setter
+@NoArgsConstructor(access = AccessLevel.PROTECTED)  //새로 객체를 생성못하게 막아서 다른데서 주문상품 필드값을 설정 못하게함
 public class OrderItem {
     
     @Id
@@ -25,6 +28,7 @@ public class OrderItem {
     
     private int orderPrice; // 주문 가격
     private int count; // 주문 수량
+    
 
     //생성 메소드
     //할인 정책때문에 주문 당시 금액을 따로 받아줘야함
